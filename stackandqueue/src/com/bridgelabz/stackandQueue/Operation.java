@@ -16,14 +16,24 @@ public class Operation {
 		stacklist.push(70);
 		stacklist.push(30);
 		stacklist.push(56);
-		peek();
+		stacklist.peek();
 	}
 
 	public static void pop() {
-		System.out.println("Before Pop:");
+		System.out.println(" Before Pop:");
 		StackQueue stacklist = addElement();
-		pop();
-		System.out.println("After Pop:");
+		stacklist.poptillend();
+		System.out.println(" After Pop:");
 		stacklist.display();
+	}
+
+	public static void queueElement() {
+		StackQueue stacklist = new StackQueue();
+		stacklist.queue(56);
+		stacklist.queue(30);
+		stacklist.queue(70);
+
+		stacklist.display();
+		stacklist.peek();
 	}
 }
