@@ -1,7 +1,6 @@
 package com.bridgelabz.stackandQueue;
 
 public class StackQueue {
-
 	Node head;
 	Node tail;
 	Node top;
@@ -26,7 +25,7 @@ public class StackQueue {
 			System.out.println("Linked list is Empty");
 			return;
 		} else {
-			System.out.print("\n The stack elements are ");
+			System.out.print(" The stack elements are ");
 			Node tempNode = head;
 			while (tempNode != null) {
 				if (tempNode.next != null) {
